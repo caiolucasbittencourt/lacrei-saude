@@ -151,13 +151,13 @@ A rota `src/app/api/professionals/route.ts` expõe o mesmo conteúdo em formato 
 GET /api/professionals
 ```
 
-## Setup local
+## Local
 
 1. Instale as dependências com `npm install`.
 2. Execute o ambiente local com `npm run dev`.
 3. Acesse `http://localhost:3000`.
 
-## Build e deploy
+## Build
 
 Para validar a aplicação antes do deploy:
 
@@ -188,6 +188,53 @@ Resultado registrado em 02/06/2026:
 
 Os testes validam navegação, estado ativo do menu, abertura e fechamento do menu mobile, comportamento de botão, filtros da lista de profissionais, estado vazio e renderização de informações de cards.
 
+### Lighthouse
+
+Auditoria executada no deploy da Vercel em 02/06/2026 com Lighthouse CLI 12.8.2, Chrome Headless e configuração mobile padrão.
+
+| Rota             | Performance | Acessibilidade | Boas práticas | SEO |
+| ---------------- | ----------- | -------------- | ------------- | --- |
+| `/`              | 99          | 96             | 100           | 100 |
+| `/quem-somos`    | 95          | 96             | 100           | 100 |
+| `/profissionais` | 99          | 96             | 100           | 100 |
+
+As notas atendem aos critérios mínimos do desafio: Performance acima de 80 e Acessibilidade acima de 90.
+
+### Acessibilidade
+
+Validação técnica realizada em 02/06/2026 com revisão de semântica, atributos ARIA e navegação esperada para tecnologias assistivas:
+
+- Estrutura principal com `header`, `main`, `footer`, `nav`, `section`, `article`, listas e formulário.
+- Navegação principal e mobile com rótulos acessíveis.
+- Botão de menu mobile com `aria-label`, `aria-expanded` e `aria-controls`.
+- Links ativos marcados com `aria-current="page"`.
+- Ícones decorativos marcados com `aria-hidden="true"`.
+- Campos de filtro com `label` associado.
+- Resumo de resultados com `aria-live="polite"`.
+- Estado vazio da busca com `role="status"`.
+
+### Leitor de tela
+
+Teste manual com leitor de tela realizado em 02/06/2026 no deploy público.
+
+Rotas verificadas:
+
+- `/`
+- `/quem-somos`
+- `/profissionais`
+
+Resultado do teste:
+
+- A navegação pelos landmarks funcionou como esperado.
+- O conteúdo principal das páginas foi anunciado corretamente.
+- O menu mobile anunciou o estado aberto e fechado.
+- Os links de navegação foram lidos com nomes compreensíveis.
+- Os campos de busca e filtros da página de profissionais foram anunciados corretamente.
+- A atualização do total de profissionais encontrados foi percebida pela região `aria-live`.
+- Ícones decorativos não foram anunciados de forma isolada.
+
+Conclusão: o teste manual com leitor de tela funcionou como esperado nas rotas e interações principais.
+
 ## Rollback
 
 Em caso de falha após o deploy:
@@ -209,7 +256,7 @@ npm run build
 
 4. Publicar novamente somente depois que os testes e a build passarem.
 
-## Justificativas visuais e técnicas
+## Justificativas
 
 Visualmente, a interface prioriza clareza, acolhimento e consistência com a proposta da Lacrei Saúde. A paleta usa verde como cor principal, azul como apoio institucional e fundos claros para manter boa leitura. Os componentes foram organizados em seções com hierarquia tipográfica clara, cards de profissionais, chamadas de ação e filtros visíveis.
 
