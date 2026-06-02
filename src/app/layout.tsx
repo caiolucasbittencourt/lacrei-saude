@@ -4,6 +4,7 @@ import type { PropsWithChildren } from "react";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { siteUrl } from "@/lib/siteUrl";
 import { StyledComponentsRegistry } from "@/lib/StyledComponentsRegistry";
 
 const nunito = Nunito({
@@ -11,8 +12,6 @@ const nunito = Nunito({
   variable: "--font-nunito",
   display: "swap",
 });
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://lacrei-saude.local";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
