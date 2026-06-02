@@ -53,7 +53,7 @@ O projeto funciona localmente sem variáveis obrigatórias.
 Opcionalmente, defina a URL pública do ambiente para metadados e sitemap:
 
 ```env
-NEXT_PUBLIC_SITE_URL="https://sua-url-deploy.com"
+NEXT_PUBLIC_SITE_URL="https://lacrei-saude-zeta.vercel.app"
 ```
 
 ## Executando
@@ -74,6 +74,21 @@ npm run start
 ```
 
 `npm run build` gera a build de produção e `npm run start` executa a aplicação compilada localmente.
+
+## Deploy
+
+A aplicação está publicada na Vercel:
+
+```text
+https://lacrei-saude-zeta.vercel.app
+```
+
+Rotas públicas validadas:
+
+- `https://lacrei-saude-zeta.vercel.app/`
+- `https://lacrei-saude-zeta.vercel.app/quem-somos`
+- `https://lacrei-saude-zeta.vercel.app/profissionais`
+- `https://lacrei-saude-zeta.vercel.app/api/professionals`
 
 ## Scripts
 
@@ -153,7 +168,7 @@ npm run build
 Fluxo recomendado:
 
 - Publicar em uma plataforma compatível com Next.js, como Vercel.
-- Configurar `NEXT_PUBLIC_SITE_URL` com a URL final do ambiente, quando aplicável.
+- Configurar `NEXT_PUBLIC_SITE_URL` com `https://lacrei-saude-zeta.vercel.app`.
 - Rodar `npm run build` antes do deploy.
 - Após a publicação, validar as rotas `/`, `/quem-somos` e `/profissionais`.
 
