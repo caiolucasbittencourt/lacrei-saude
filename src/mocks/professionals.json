@@ -1,0 +1,62 @@
+[
+  {
+    "id": "marina-alves",
+    "name": "Marina Alves",
+    "specialty": "Psicologia",
+    "location": "São Paulo, SP",
+    "modality": "Online e presencial",
+    "verified": true,
+    "description": "Atendimento para ansiedade, autoestima e processos de afirmação de identidade.",
+    "profileTags": ["Branca", "Mulher cis", "Heterossexual", "Atende convênio"]
+  },
+  {
+    "id": "tiago-mendes",
+    "name": "Tiago Mendes",
+    "specialty": "Clínica geral",
+    "location": "Rio de Janeiro, RJ",
+    "modality": "Presencial",
+    "verified": true,
+    "description": "Cuidado integral para acompanhamento preventivo e encaminhamentos seguros.",
+    "profileTags": ["Pardo", "Homem cis", "Gay", "Atende convênio"]
+  },
+  {
+    "id": "renata-lima",
+    "name": "Renata Lima",
+    "specialty": "Nutrição",
+    "location": "Belo Horizonte, MG",
+    "modality": "Online",
+    "verified": true,
+    "description": "Planos alimentares possíveis, com escuta sobre rotina, corpo e bem-estar.",
+    "profileTags": ["Negra", "Mulher cis", "Bissexual", "Atende convênio"]
+  },
+  {
+    "id": "carlos-vieira",
+    "name": "Carlos Vieira",
+    "specialty": "Endocrinologia",
+    "location": "Curitiba, PR",
+    "modality": "Online e presencial",
+    "verified": true,
+    "description": "Acompanhamento hormonal com linguagem clara e respeito às singularidades.",
+    "profileTags": ["Branco", "Homem cis", "Heterossexual", "Atende convênio"]
+  },
+  {
+    "id": "luiza-cardoso",
+    "name": "Luiza Cardoso",
+    "specialty": "Ginecologia",
+    "location": "Recife, PE",
+    "modality": "Presencial",
+    "verified": false,
+    "description": "Consulta centrada em autonomia, prevenção e acolhimento sem julgamento.",
+    "profileTags": ["Parda", "Mulher cis", "Lésbica", "Atende convênio"]
+  },
+  {
+    "id": "samuel-pereira",
+    "name": "Samuel Pereira",
+    "specialty": "Psiquiatria",
+    "location": "Florianópolis, SC",
+    "modality": "Online",
+    "verified": true,
+    "description": "Apoio em saúde mental com plano terapêutico compartilhado e humanizado.",
+    "profileTags": ["Preto", "Homem cis", "Heterossexual", "Atende convênio"]
+  }
+]
