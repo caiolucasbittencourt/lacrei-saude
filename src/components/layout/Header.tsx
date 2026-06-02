@@ -112,11 +112,6 @@ const Brand = styled(Link)`
   display: inline-flex;
   align-items: center;
   flex: 0 0 auto;
-
-  img {
-    width: 150px;
-    height: auto;
-  }
 `;
 
 const DesktopNav = styled.nav`

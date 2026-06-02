@@ -162,11 +162,6 @@ const BrandColumn = styled.div`
 
 const LogoLink = styled(Link)`
   display: inline-flex;
-
-  img {
-    width: 169px;
-    height: auto;
-  }
 `;
 
 const SocialList = styled.ul`
