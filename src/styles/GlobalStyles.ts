@@ -1,14 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-  @font-face {
-    font-family: "Material Symbols Outlined";
-    font-display: block;
-    font-style: normal;
-    font-weight: 400;
-    src: url("/fonts/material-symbols-outlined.ttf") format("truetype");
-  }
-
   *,
   *::before,
   *::after {
